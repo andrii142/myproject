@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Front-end test | Gromcode University</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header__logo">
+			<p>myproject</p>
+		</div>
+		<nav>
+			<div class="topnav">
+				<a href="#">home</a>
+				<a href="#">about</a>
+				<a href="#">services</a>
+				<a href="#">portfolio</a>
+				<a href="#">testimonials</a>
+				<a href="#">contact</a>
+				<a href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="main__welcome">
+			<h1>WELCOME ON <span>MYCOMPANY</span></h1>
+			<p>My name is Nazar, and this is my project</p>
+		</div>
+
+		<div class="wrapper">
+			<div class="first__task__container">
+				<!-- <div class="first__task"> -->
+					<h1><span>FIRST</span> TASK</h1>
+          <p>Output the smallest value: <span class="task__value" id="getMin"></span></p>
+          <button onclick="getMin()">Output</button>
+				<!-- </div> -->
+			</div>
+		</div>      
+
+		<div class="second__task__container">
+      <div class="wrapper">
+        <h1><span>SECOND</span> TASK</h1>
+        <p>Output even value: <span class="task__value" id="getEven"></span></p>
+        <button onclick="getEven()">Output</button>
+      </div>
+    </div>
+	</main>
+	<footer>
+		<div class="last__task__container">
+      <h1><span>LAST</span> TASK</h1>
+      <p>Output objects: <span class="task__value" id="searchByName"></span></p>
+      <p>Enter value: <input type="text" id="outObject"></p>
+      <button onclick="searchByName()">Output</button>
+    </div>
+	</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

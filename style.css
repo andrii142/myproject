@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 3px solid #fcac45;
+}
+
+/* Header */
+header{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+}
+
+.header__logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 56px;
+  margin-left: 12%;
+}
+
+nav {
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+.topnav {
+  text-transform: uppercase;
+}
+
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+
+.icon {
+  display: none;
+}
+
+
+/* Media */
+@media screen and (max-width: 1200px) {
+  nav {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  nav {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  main .main__welcome {
+    padding: 50px 0 50px 0;
+  }
+
+  main .main__welcome p {
+    font-size: 14px;
+  }
+
+  main .main__welcome h1 {
+    font-size: 25px;
+  }
+
+  .first__task__right {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .first__task__right h1 {
+    margin-top: 10px;
+  }
+
+  .first__task__right p {
+    margin: 0;
+	}
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main__welcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 415px 0;
+}
+
+.main__welcome p {
+  color: #999;
+  font-size: 20px;
+}
+
+.main__welcome h1 {
+  color: #999;
+  font-size: 44px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main__welcome h1::after {
+  display: none;
+}
+
+.main__welcome span {
+  color: #fcac45;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.task__value {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* First task */
+.first__task__container {
+  background-color: white;
+  padding: 100px 0 205px 0;
+  text-align: center;
+}
+
+.first__task__container span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+.first__task__container h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.first__task__container p {
+  margin-bottom: 30px;
+  color: #6c6c6c;
+}
+
+.first__task__container button {
+  background: #fcac45;
+  border-radius: 10px;
+  color: #000;
+  border: 0;
+  width: 110px;
+  height: 30px;
+}
+
+.first__task__container button:hover {
+  background: #000;
+  color: white;
+  transition: 1s;
+}
+
+/* Second task */
+.second__task__container {
+  background-color: #000;
+  padding: 100px 0 205px 0;
+  text-align: center;
+}
+
+.second__task__container span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+.second__task__container h1 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.second__task__container p {
+  margin-bottom: 30px;
+  color: #6c6c6c;
+}
+
+.second__task__container button {
+  background: #fcac45;
+  border-radius: 10px;
+  color: #000;
+  border: 0;
+  width: 110px;
+  height: 30px;
+}
+
+.second__task__container button:hover {
+  background: white;
+  transition: 1s;
+}
+
+/* Last task */
+.last__task__container {
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.last__task__container span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+.last__task__container h1 {
+  margin-bottom: 30px ;
+}
+
+.last__task__container p {
+  margin-bottom: 30px;
+  color: #6c6c6c;
+}
+
+.last__task__container input {
+  padding: 0 0 0 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+}
+
+.last__task__container button {
+  background: #fcac45;
+  border-radius: 10px;
+  color: #000;
+  border: 0;
+  width: 110px;
+  height: 30px;
+}
+
+.last__task__container button:hover {
+  background: #000;
+  color: white;
+  transition: 1s;
+}
