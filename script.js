@@ -1,25 +1,56 @@
 'use strict'
 
 function getMin() {
-  let arr = [2, 4, 5, 7, 9, 4, 1, 16];
-  
-  arr = Math.min(...arr);
+  let arr = [];
+  let numberFromPrompt;
+  let minNumber;
 
-  document.getElementById('getMin').innerHTML = arr;
+  while (true) {
+    numberFromPrompt = prompt('Enter number for array: (press cancel to finish)');
+    arr.push(+numberFromPrompt);
+    if (numberFromPrompt === null) break;
+  } // array from prompt
+
+  arr.pop();
+
+  document.getElementById('userArrayFirst').innerHTML = arr;
+
+  function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a === b) return 0;
+    if (a < b) return -1;
+  }
+
+  arr.sort(compareNumeric);
+
+  minNumber = arr[0];
+
+  document.getElementById('getMin').innerHTML = minNumber;
 } // first task
 
 
 function getEven() {
-  let arr = [2, 4, 5, 7, 9, 4, 1, 16];
-  let result = [];
+  let arr = [];
+  let evenNumbers = [];
+  let numberFromPrompt;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-      result.push(arr[i]);
+  while (true) {
+    numberFromPrompt = prompt('Enter number for array: (press cancel to finish)');
+    arr.push(+numberFromPrompt);
+    if (numberFromPrompt === null) break;
+  } // array from prompt
+
+  arr.pop();
+
+  document.getElementById('userArraySecond').innerHTML = arr;
+
+  arr.forEach(function(a) {
+    if (a % 2 === 0) {
+      evenNumbers.push(a);
     }
-  }
+  })
 
-  document.getElementById('getEven').innerHTML = result;
+  document.getElementById('getEven').innerHTML = evenNumbers;
 } // second task
 
 
