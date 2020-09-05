@@ -180,6 +180,7 @@ main {
 }
 
 .first__task__container p {
+  line-height: 5px;
   margin-bottom: 30px;
   color: #6c6c6c;
 }
@@ -217,6 +218,7 @@ main {
 }
 
 .second__task__container p {
+  line-height: 5px;
   margin-bottom: 30px;
   color: #6c6c6c;
 }
