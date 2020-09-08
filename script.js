@@ -1,17 +1,7 @@
 'use strict'
 
-function getMin() {
-  let arr = [];
-  let numberFromPrompt;
+function getMin(arr) {
   let minNumber;
-
-  while (true) {
-    numberFromPrompt = prompt('Enter number for array: (press cancel to finish)');
-    arr.push(+numberFromPrompt);
-    if (numberFromPrompt === null) break;
-  } // array from prompt
-
-  arr.pop();
 
   document.getElementById('userArrayFirst').innerHTML = arr;
 
@@ -26,21 +16,14 @@ function getMin() {
   minNumber = arr[0];
 
   document.getElementById('getMin').innerHTML = minNumber;
+
 } // first task
 
+document.getElementById('btn1').onclick = () => getMin([4, 8, 12, 63, 5, 21, 9]);
 
-function getEven() {
-  let arr = [];
+
+function getEven(arr) {
   let evenNumbers = [];
-  let numberFromPrompt;
-
-  while (true) {
-    numberFromPrompt = prompt('Enter number for array: (press cancel to finish)');
-    arr.push(+numberFromPrompt);
-    if (numberFromPrompt === null) break;
-  } // array from prompt
-
-  arr.pop();
 
   document.getElementById('userArraySecond').innerHTML = arr;
 
@@ -52,6 +35,8 @@ function getEven() {
 
   document.getElementById('getEven').innerHTML = evenNumbers;
 } // second task
+
+document.getElementById('btn2').onclick = () => getEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 
 function searchByName() {
