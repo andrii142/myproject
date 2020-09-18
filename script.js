@@ -6,9 +6,7 @@ function getMin(arr) {
   document.getElementById('userArrayFirst').innerHTML = arr;
 
   function compareNumeric(a, b) {
-    if (a > b) return 1;
-    if (a === b) return 0;
-    if (a < b) return -1;
+     return a - b;
   }
 
   arr.sort(compareNumeric);
